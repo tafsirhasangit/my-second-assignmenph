@@ -1,0 +1,180 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    color: #FFFFFF;
+}
+
+p{
+    color: #FFFFFF;
+}
+
+.banner{
+    background: #161616;
+    width: 1121px;
+    border-radius: 30px;  
+    margin: auto;
+}
+.banner-div{
+    text-align: center;
+}
+.banner-flex{
+    display: flex;
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+.watch-now{
+    color: aqua;
+}
+.player{
+    position: center;
+}
+ .banner button{
+    background-color: red;
+    border-radius: 5px;
+    padding: 18px;
+    color: white; 
+ }
+
+ a{
+    text-decoration: none;
+    color: #FFFFFF;
+ }
+
+
+
+ /* /* -------------------------------second section---------------------------------- 
+  */
+
+  .btn-group .button{
+    background-color: #161616;
+    border: 1px solid rgb(190, 43, 43);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif; 
+    width: 340px;
+    display: block;
+    border-radius: 5px;
+  }
+
+  .btn-group .button.red-color{
+    background-color: red;
+    text-decoration: none;
+  }
+
+.live-matches{
+    margin-left: 40px;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 500px;
+    width: 1000px;
+    padding-right: 15px;   
+  }
+.transfer-section{
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.banner-flex-two{
+    /* display: flex; */
+    position: relative;
+    height: 1000px;
+    width: 100%;
+    display: flex;
+}
+/* ------------------footer----------------------------== */
+
+.footer{
+    background-color: #161616;
+    width: 1600px;
+    height: 444px;
+    text-align: center;
+    padding: 5px;
+}
+  
+.footer p {
+    margin: 0;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-left: 5em;
+}
+
+.footer span{
+    color: #FFFFFF;
+}
+
+
+/* ---------------------------media Queries----------------- */
+
+/* -----------------tabket--------------------------- */
+@media only screen and (min-width:689px) and (max-width:1023px) {
+    body{
+        margin: auto;
+    }
+        .banner-flex-two{
+            flex-direction: column;
+        margin-bottom: 500px;
+        width: 100%;
+            
+    }
+    .btn-group{
+        margin: auto;
+    }
+    .live-matches{
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+    }
+
+    .footer{
+        width: 100%;
+        
+    }
+    
+}
+ /* ---  mobile devices------ */
+
+ @media only screen and (max-width:688px) {
+    .banner-flex{
+        flex-direction: column;
+        height: max-content;
+        width: 100%;
+        margin-bottom: none;
+        padding: none;
+    }
+    .banner-div{
+        text-align: justify;
+    }
+    .second-section .banner-flex-two{
+        flex-direction: column;
+    } 
+    .btn-group{
+        margin: auto;
+ }
+ .live-matches{
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+}
+.banner-flex-two{
+    flex-direction: column;
+margin-bottom: 1500px;
+width: 100%;
+}
+.footer{
+    width: 100%;   
+}
+.footer a{
+    display: flex;
+}
+.footer h1{
+      text-align: center;
+}
+}
